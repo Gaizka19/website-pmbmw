@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Mie Ayam Bakso Mas Wiji</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo PMBMW">
+                <span>PMBMW</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#menu" class="btn-order">PESAN ONLINE</a>
+        </nav>
+    </header>
+
+    <<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <span class="hero-subtitle">
+            SELAMAT DATANG DI PONDOK KAMI
+        </span>
+
+        <h1>
+            PONDOK MIE AYAM<br>
+            BAKSO MAS WIJI
+        </h1>
+
+        <h2>Kenikmatan Sederhana, Rasa yang Istimewa!</h2>
+
+        <p>
+            Selamat datang di Pondok Mie Ayam Bakso Mas Wiji,
+            tempat menikmati sajian mie ayam dan bakso dengan
+            cita rasa khas yang dibuat dengan sepenuh hati.
+
+            Berawal dari pengalaman dan perjuangan membangun
+            usaha mandiri sejak tahun 2025, kami terus berkomitmen
+            menyajikan hidangan nikmat dengan racikan bumbu
+            hasil olahan tangan sendiri.
+
+            Berlokasi di kawasan Alun-Alun Brebes, kami siap
+            menemani waktu makan Anda dengan sajian sederhana
+            yang menghadirkan rasa istimewa dan berkesan.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="btn-main">
+                LIHAT MENU
+            </a>
+
+            <a href="https://wa.me/6285810908758"
+               target="_blank" class="btn-whatsapp">
+                PESAN SEKARANG
+            </a>
+
+        </div>
+
+    </div>
+</section>
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu">
+         <h2>MENU KAMI</h2>
+    <p>Pilihan makanan dan minuman terbaik untuk Anda.</p>
+
+    <!-- KATEGORI MAKANAN -->
+    <div class="menu-category">
+        <h3>🍜 MENU MAKANAN</h3>
+        <div id="makanan-container" class="menu-container"></div>
+    </div>
+
+    <!-- KATEGORI MINUMAN -->
+    <div class="menu-category">
+        <h3>🥤 MENU MINUMAN</h3>
+        <div id="minuman-container" class="menu-container"></div>
+    </div>
+
+    <!-- KERANJANG BELANJA -->
+    <div class="cart-section">
+        <h2>KERANJANG BELANJA</h2>
+
+        <div id="cart-container">
+            <p>Keranjang masih kosong.</p>
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: <span id="total-harga">Rp0</span></h3>
+        </div>
+        <!-- FORM CHECKOUT -->
+
+<div class="checkout-form">
+
+    <h3>DATA PEMESAN</h3>
+
+    <input
+        type="text"
+        id="nama-pelanggan"
+        placeholder="Masukkan nama Anda"
+        required
+    >
+
+    <select id="tipe-pesanan">
+        <option value="Makan di tempat">Makan di tempat</option>
+        <option value="Dibungkus">Dibungkus</option>
+    </select>
+    <input
+    type="number"
+    id="nomor-meja"
+    placeholder="Nomor meja (khusus makan di tempat)"
+    min="1"
+>
+
+    <textarea
+        id="catatan-pesanan"
+        placeholder="Catatan tambahan (opsional)"
+    ></textarea>
+
+</div>
+
+        <button class="btn-checkout" onclick="checkout()">
+            KIRIM PESAN KE WHATSAPP
+        </button>
+    </div>
+
+</section>
+
+
+
+
+    <!-- GALLERY -->
+   ```html
+<!-- GALLERY SECTION -->
+<section class="gallery" id="gallery">
+
+    <div class="gallery-heading">
+        <h2>GALERI KAMI</h2>
+        <p>Melihat lebih dekat suasana Pondok Mie Ayam Bakso Mas Wiji.</p>
+    </div>
+
+    <div class="gallery-container">
+
+        <!-- FOTO 1 -->
+        <div class="gallery-item">
+            <img src="galeri-1.jpg" alt="Suasana berjualan">
+            <div class="gallery-overlay">
+                <h3>Suasana Berjualan</h3>
+                <p>Pondok Mie Ayam Bakso Mas Wiji</p>
+            </div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="gallery-item">
+            <img src="galeri-2.jpg" alt="Lokasi gerobak jualan">
+            <div class="gallery-overlay">
+                <h3>Lokasi Gerobak Jualan</h3>
+                <p>Pondok Mie Ayam Bakso Mas Wiji</p>
+            </div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="gallery-item">
+            <img src="galeri-3.jpg" alt="Keseruan kami">
+            <div class="gallery-overlay">
+                <h3>Keseruan Kami</h3>
+                <p>Melayani pelanggan setiap hari</p>
+            </div>
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="gallery-item">
+            <img src="galeri-4.jpg" alt="Momen berjualan">
+            <div class="gallery-overlay">
+                <h3>Momen Berjualan</h3>
+                <p>Pondok Mie Ayam Bakso Mas Wiji</p>
+            </div>
+        </div>
+
+        <!-- VIDEO 1 -->
+        <div class="gallery-item">
+            <video controls preload="metadata">
+                <source src="galeri-vidio.mp4" type="video/mp4">
+            </video>
+            <div class="gallery-overlay">
+                <h3>Aktivitas Kami</h3>
+                <p>Keseruan melayani pelanggan</p>
+            </div>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="gallery-item">
+            <video controls preload="metadata">
+                <source src="galeri-vidio2.mp4" type="video/mp4">
+            </video>
+            <div class="gallery-overlay">
+                <h3>Keseruan Berjualan</h3>
+                <p>Pondok Mie Ayam Bakso Mas Wiji</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+```
+
+    \<!-- ABOUT -->
+
+\<section class="about" id="about">     \<div class="about-container">
+
+
+    <div class="about-image">
+    <video autoplay muted loop playsinline>
+        <source src="tentang-kami.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video.
+    </video>
+
+    <div class="about-image-label">
+        <span>Berdiri Sejak</span>
+        <strong>2025</strong>
+    </div>
+</div>
+
+    <div class="about-content">
+        <span class="about-subtitle">CERITA KAMI</span>
+
+        <h2>Berawal dari Pengalaman, Tumbuh dengan Keyakinan.</h2>
+
+        <p>
+            Pondok Mie Ayam Bakso Mas Wiji berdiri sejak tahun 2025.
+            Perjalanan usaha ini berawal dari seorang pekerja yang sebelumnya
+            hanya menjadi pelayan dan ikut membantu saudaranya berjualan bakso.
+        </p>
+
+        <p>
+            Berbekal pengalaman, niat, dan keyakinan untuk menjadi seorang
+            wirausaha mandiri, Mas Wiji akhirnya memberanikan diri membangun
+            usahanya sendiri. Dari langkah sederhana tersebut, Pondok Mie Ayam
+            Bakso Mas Wiji terus berjalan dan hingga kini tetap hadir melayani pelanggan.
+        </p>
+
+        <p>
+            Berlokasi di Alun-Alun Brebes, tepat di depan bekas TK Pertiwi Setda,
+            kami hadir menyajikan mie ayam dan bakso dengan cita rasa khas.
+        </p>
+
+        <p>
+            Keistimewaan kami terletak pada racikan bumbu hasil olahan tangan
+            sendiri yang menghadirkan rasa nikmat dan pengalaman kuliner yang berkesan.
+        </p>
+
+        <div class="about-quote">
+            "Berawal dari perjuangan, disajikan dengan sepenuh hati."
+        </div>
+    </div>
+
+</div>
+
+
+\</section>
+
+
+ <!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="contact-heading">
+        <span>GET IN TOUCH</span>
+        <h2>Mari Nikmati Sajian Kami!</h2>
+        <p>Kami senang bisa menjadi bagian dari pengalaman kuliner Anda.</p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Kunjungi Pondok Kami</h3>
+            <p class="contact-description">
+                Sedang ingin menikmati mie ayam dan bakso yang lezat?
+                Kami tunggu kedatangan Anda!
+            </p>
+
+            <div class="contact-card">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h4>Lokasi Kami</h4>
+                    <p>Alun-Alun Brebes, depan bekas TK Pertiwi Setda.</p>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">☎</div>
+                <div>
+                    <h4>Hubungi Kami</h4>
+                    <p>0858-1090-8758</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/6285810908758?text=Halo%20Pondok%20Mie%20Ayam%20Bakso%20Mas%20Wiji"
+               target="_blank" class="contact-button">
+                <span>Pesan Sekarang via WhatsApp</span>
+                <span>➜</span>
+            </a>
+
+        </div>
+
+        <div class="contact-map-wrapper">
+            <div class="map-heading">
+                <span>📍</span>
+                <div>
+                    <h3>Temukan Lokasi Kami</h3>
+                    <p>Alun-Alun Brebes</p>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Alun-Alun%20Brebes&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact-footer">
+        <p>Terima kasih telah memilih <strong>Pondok Mie Ayam Bakso Mas Wiji.</strong></p>
+    </div>
+
+</section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Pondok Mie Ayam Bakso Mas Wiji.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
